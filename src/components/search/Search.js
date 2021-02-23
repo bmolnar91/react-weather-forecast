@@ -9,7 +9,7 @@ import SearchAutocomplete from "./SearchAutocomplete";
 const Search = () => {
   const [favorites, setFavorites] = useContext(FavoriteListContext);
   const [city, setCity] = useState("budapest");
-  const url = `${process.env.REACT_APP_CURRENTWEATHER_URL}/${city}`;
+  const url = `${process.env.REACT_APP_CURRENT_WEATHER_URL}/${city}`;
   const [searchTerm, setSearchTerm] = useState("");
   const [error, setError] = useState(null);
 
